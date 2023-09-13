@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./icon.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>Arthy IP Tracker</title>
+</head>
+<body>
+    <div id="LeftSide">
+        <input type="text" id="ipInput" placeholder="255.255.255.255">
+        <div id="BtnDiv">
+            <button id="meuIp" class="BTN" onclick="meuIp()">Meu IP</button>
+            <button id="trackIp" class="BTN" onclick="trackIp()">Rastrear</button>
+            <button id="detalhesIp" class="BTN" onclick="detalhesIp()">Detalhes</button>
+        </div>
+    </div>
+    <div id="Detalhes">
+        <div id="DetalhesBox">
+            <p id="ip">IP:</p>
+            <p id="local">Local:</p>
+            <p id="latitude">Latitude:</p>
+            <p id="longitude">Longitude:</p>
+            <p id="fuso">Fuso Horário:</p>
+            <p id="asn">ASN:</p>
+            <p id="isp">ISP:</p>
+        </div>
+    </div>
+    <div id="map"></div>
+</body>
+<script src="./script.js"></script>
+</html>
